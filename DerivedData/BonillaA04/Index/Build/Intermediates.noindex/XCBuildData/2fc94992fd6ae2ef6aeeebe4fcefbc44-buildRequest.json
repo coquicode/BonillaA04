@@ -1,0 +1,60 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "eafe8fbd74a72ac38a075e65ad9acb7a666a5813c6c1fe28489887f8a23327c1"
+    }
+  ],
+  "containerPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/BonillaA04.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx11.3",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/BonillaA04/Index/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/BonillaA04/Index/Build/Products",
+      "derivedDataPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/BonillaA04/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/BonillaA04/Index/PrecompiledHeaders",
+      "pchPath" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/BonillaA04/Index/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "INDEX_ARENA_INFO_REGULAR_BUILD_PRODUCTS_DIR" : "/Users/roem/Desktop/Project_Git/BonillaA04/DerivedData/Build/Products",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
