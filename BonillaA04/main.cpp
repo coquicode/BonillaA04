@@ -133,10 +133,10 @@ else if (userIn.substr(0,1) == "L")
             bussesPtr[0]->disOne(bussesPtr);
             break;
         case 2:
-           bussesPtr[0]->displayBus(searchID, bussesPtr);
+           bussesPtr[0]->displayBus(intID, bussesPtr);
             break;
         case 3:
-            bussesPtr[0]->search(searchID, userStat,  bussesPtr);
+            bussesPtr[0]->search(intID, stats,  bussesPtr);
         case 4:
             cout << "Thanks you, have a nice banana!" << endl;
             break;
