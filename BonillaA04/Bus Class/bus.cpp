@@ -4,10 +4,11 @@
 //
 //  Created by Roem Bonilla on 10/10/21.
 //
-
+#include "functions.hpp"
 #include "bus.hpp"
 #include <iostream>
 #include <cstdlib>
+#include <iomanip>
 using namespace std;
 
 //Default Constructor
@@ -56,23 +57,46 @@ char Bus::getStatus() const
     
     return status;
 }
-int Bus::search(int seId, Bus * bts)const
+string Bus::search(int seId, char stat, Bus * bts[])const
 {
     
     int i = 0;
-    while (bts[i]->getbusID() != nullptr)
+    while (bts[i] != nullptr)
             {
-                
-                if (seId == bts[i].getbusID())
+                if (seId == bts[i]->getbusID())
                 {
-
-                    return  i;
+                    bts[i]->setStatus(stat);
+                    return  "Succes";
                 }
-
             }
-            return -1;
-    
-  
+            return "Bus ID not found";
+}
+string Bus::displayBus(int id, Bus *bts[])
+{
+    int i = 0;
+    while (bts[i] != nullptr)
+            {
+                if (id == bts[i]->getbusID())
+                {
+                    displayMenu();
+                    header();
+                    cout << bts[i]->getbusID();cout << setw(15); cout << bts[i]->getType(); cout << setw(15); cout << bts[i]->getCapacity(); cout << setw(15); cout << bts[i]->getMileage();cout << setw(15); cout << bts[i]->getStatus() << endl;
+                }
+                i++;
+            }
+            return "Bus not found";
+}
+
+int Bus::disOne(Bus *poaat[])
+{   string waiting = "";
+    int i =0;
+    while (poaat[i] != nullptr)
+    {
+        cout << poaat[i]->getbusID();cout << setw(15); cout << poaat[i]->getType(); cout << setw(15); cout << poaat[i]->getCapacity(); cout << setw(15); cout << poaat[i]->getMileage();cout << setw(15); cout << poaat[i]->getStatus() << endl;
+        i ++;
+        cin >> waiting;
+    }
+    return -1;
 }
 Bus::~Bus()
 {

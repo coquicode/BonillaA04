@@ -17,7 +17,7 @@ int main()
 {
     ifstream busRecs;
     string buffer,busID,busType,busCapacity,busMileage,busStatus;
-   
+
     int j = 0;
     ///creates bus object ptr and initializes array to null
     Bus *bussesPtr[SIZE];
@@ -27,7 +27,7 @@ int main()
     }
     //open file
     busRecs.open("/Users/Roem/Desktop/COMSC200/a4dataF21.txt");
-   
+
     if (!busRecs.is_open())
         {
             cout << "File Not Found" << endl;
@@ -35,21 +35,21 @@ int main()
         }
     //else file opens
         cout << "Opening File" << endl;
-    
+
     //While loop reads the file until eof
     while (getline(busRecs, buffer))
     {
-       
-    
-    //cout << buffer;
+
+
+  
        busID = buffer.substr(0,5);
         busType = buffer.substr(5,1);
         busCapacity = buffer.substr(6,3);
         busMileage = buffer.substr(9,7);
         busStatus = buffer.substr(16);
-         
-        
-        
+
+
+
         //string conversions//
         char cType[busID.length()], cStat[busStatus.length()];
         //id conversion
@@ -61,50 +61,86 @@ int main()
         for (int i = 0; i < busStatus.length(); i++)
             {
         cStat[i] = busStatus.c_str()[i];
-                
+
             }
         //Converts strings to ints
         //    ID            Capacity                           Mileage
         int inID = stoi(busID),inCap = stoi(busCapacity),  inMil = stoi(busMileage);
-        
+
         bussesPtr[j] = new Bus(inID, cType, inCap, inMil, cStat);
        j++;
-        
-       
+
+
     }
-   
+
     busRecs.close();
-    
+
     int count = 0;//iterates through ptr array
-    
+
     //prints menu
     displayMenu();
-    
+    header();
     string userIn; //variable for user input
-    int convert = 0; //user input to in conversion
+    
+    string searchID;
+    string newStat;
+    string option;
+    int choice;
+    int intID;
+    char stats[2];
     getline(cin,userIn);//stores user input
     
-    header();
+   if (userIn.substr(0,1) == "C")
+   {   choice = 3;
+       
+       option = userIn.substr(0,1);
+       searchID = userIn.substr(2,5);
+       newStat = userIn.substr(7);
+       cout << option << searchID << newStat << endl;
+       choice = 3;
+       int intID = stoi(searchID);
+       
+       for (int i = 0; i < newStat.length(); i++)
+           {
+               stats[i] = userIn.c_str()[i];
+           }
+   }
+else if (userIn.substr(0,1) == "L")
+{
+    
+    choice = 2;
+       
+       option = userIn.substr(0,1);
+       searchID = userIn.substr(2,5);
+       newStat = userIn.substr(7);
+       cout << option << searchID << newStat << endl;
+       choice = 3;
+       int intID = stoi(searchID);
+       
+     
+}
+   
     while (bussesPtr[count] != nullptr)
     {
         cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
         count ++;
     }
-  
-    switch (convert)
+
+    switch (choice)
     {
         case 1:
-            <#statements#>
+            cout << "Press enter to see the next bus on the list. " << endl;
+            bussesPtr[0]->disOne(bussesPtr);
             break;
         case 2:
-            statements
+           bussesPtr[0]->displayBus(searchID, bussesPtr);
             break;
         case 3:
-            setStatus(/*some variable*/);
+            bussesPtr[0]->search(searchID, userStat,  bussesPtr);
         case 4:
             cout << "Thanks you, have a nice banana!" << endl;
             break;
-           
+
         default:
             break;
     }

@@ -6,12 +6,13 @@
 //
 
 #include "functions.hpp"
-#include "bus.hpp"
 #include <iomanip>
+#include <iostream>
+using namespace std;
 void displayMenu()
 {
 cout << "Enter transaction code (D = Display, L = List a Bus, C = Change, X = Exit" << endl;
-    ;}
+}
 
 //Prints the header
 void header()
@@ -22,3 +23,4 @@ void header()
     
     cout << "======================================================================" << endl;
 }
+//Searches for a bus

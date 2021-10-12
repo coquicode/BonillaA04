@@ -39,7 +39,9 @@ public:
     int getCapacity() const;
     int getMileage() const;
     char getStatus() const;
-    int search(int, Bus*) const;
+    string search(int,char, Bus *[]) const;
+    string displayBus(int, Bus * []);
+    int disOne(Bus *[]);
 };
     
 #endif /* bus_hpp */
