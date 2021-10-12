@@ -14,3 +14,5 @@ using namespace std;
 //define functions here:
 
 #endif /* functions_hpp */
+void displayMenu();
+void header();

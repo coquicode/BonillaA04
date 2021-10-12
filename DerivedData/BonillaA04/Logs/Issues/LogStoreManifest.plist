@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>E4780A0A-EAC5-4E57-B4AF-6A3B58B44776</key>
+		<key>AD72B1F4-5607-4C76-8A13-888B1C837CA2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
 			<key>fileName</key>
-			<string>E4780A0A-EAC5-4E57-B4AF-6A3B58B44776.xcactivitylog</string>
+			<string>AD72B1F4-5607-4C76-8A13-888B1C837CA2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>BonillaA04-gpfgokptyhoiqedozujhvchqdxyw</string>
 			<key>timeStartedRecording</key>
-			<real>655676563.44327402</real>
+			<real>655700464.47738194</real>
 			<key>timeStoppedRecording</key>
-			<real>655676564.83902097</real>
+			<real>655700465.254722</real>
 			<key>title</key>
 			<string>Build target BonillaA04</string>
 			<key>uniqueIdentifier</key>
-			<string>E4780A0A-EAC5-4E57-B4AF-6A3B58B44776</string>
+			<string>AD72B1F4-5607-4C76-8A13-888B1C837CA2</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

@@ -25,32 +25,35 @@ Bus::Bus(int ID, char* bType, int cap, int mile, char* stat)
     status = *stat;
 }
 //Setters
-void setStatus(char);
-
+void Bus::setStatus(char setIt)
+{
+    status = setIt;
+    
+}
 //Getters
 int Bus::getbusID() const
 {
-    cout << "from the class " << busID << endl;
+    
     return busID;
 }
 char Bus::getType() const
 {
-    cout << "from the class " << type << endl;
+    
     return type;
 }
 int Bus::getCapacity() const
 {
-    cout << "from the class " << capacity << endl;
+   
     return capacity;
 }
 int Bus::getMileage() const
 {
-    cout << "from the class " << mileage << endl;
+   
     return mileage;
 }
 char Bus::getStatus() const
 {
-    cout << "from the class " << status << endl;
+    
     return status;
 }
 Bus::~Bus()

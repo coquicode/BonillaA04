@@ -37,20 +37,18 @@ int main()
         cout << "Opening File" << endl;
     
     //While loop reads the file until eof
-    //while (!busRecs.eof())
+    while (getline(busRecs, buffer))
     {
-    getline(busRecs, buffer);
-    cout << buffer;
+       
+    
+    //cout << buffer;
        busID = buffer.substr(0,5);
         busType = buffer.substr(5,1);
         busCapacity = buffer.substr(6,3);
         busMileage = buffer.substr(9,7);
         busStatus = buffer.substr(16);
-//        cout << "bus id is = " << busID << endl;
-//        cout << "bus type is = " << busType << endl;
-//        cout << "bus Cap is = " << busCapacity << endl;
-//        cout << "bus Miles is = " << busMileage << endl;
-//        cout << "bus Stat is = " << busStatus << endl;
+         
+        
         
         //string conversions//
         char cType[busID.length()], cStat[busStatus.length()];
@@ -68,10 +66,48 @@ int main()
         //Converts strings to ints
         //    ID            Capacity                           Mileage
         int inID = stoi(busID),inCap = stoi(busCapacity),  inMil = stoi(busMileage);
-        Bus(inID, cType, inCap, inMil, cStat);
+        
+        bussesPtr[j] = new Bus(inID, cType, inCap, inMil, cStat);
+       j++;
+        
+       
     }
-        
-        
+   
+    
+    
+    int count = 0;//iterates through ptr array
+    
+    //prints menu
+    displayMenu();
+    
+    string userIn; //variable for user input
+    int convert = 0; //user input to in conversion
+    getline(cin,userIn);//stores user input
+    
+    header();
+    while (bussesPtr[count] != nullptr)
+    {
+        cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
+        count ++;
+    }
+  
+    switch (convert)
+    {
+        case 1:
+            <#statements#>
+            break;
+        case 2:
+            <#statements#>
+            break;
+        case 3:
+            statements
+        case 4:
+            cout << "Thanks you, have a nice banana!" << endl;
+            break;
+           
+        default:
+            break;
+    }
     
     return 0;
 }
