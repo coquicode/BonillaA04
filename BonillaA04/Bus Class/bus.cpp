@@ -57,7 +57,7 @@ char Bus::getStatus() const
     
     return status;
 }
-string Bus::search(int seId, char stat, Bus * bts[])const
+string Bus::search(int seId, char stat[], Bus * bts[])const
 {
     
     int i = 0;
@@ -65,7 +65,7 @@ string Bus::search(int seId, char stat, Bus * bts[])const
             {
                 if (seId == bts[i]->getbusID())
                 {
-                    bts[i]->setStatus(stat);
+                    bts[i]->setStatus(stat[0]);
                     return  "Succes";
                 }
             }
