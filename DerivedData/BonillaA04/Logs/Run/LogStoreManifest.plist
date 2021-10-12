@@ -6,6 +6,40 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
+		<key>05F662EC-C6EC-4125-9203-F1AFC4E975E6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>05F662EC-C6EC-4125-9203-F1AFC4E975E6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655712166.25119495</real>
+			<key>timeStoppedRecording</key>
+			<real>655712601.94401002</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>05F662EC-C6EC-4125-9203-F1AFC4E975E6</string>
+		</dict>
 		<key>1AD3B679-D504-4A49-BEF3-18774C63FC7F</key>
 		<dict>
 			<key>className</key>

@@ -74,12 +74,18 @@ int main()
     }
 
     busRecs.close();
+    
 
     int count = 0;//iterates through ptr array
 
     //prints menu
     displayMenu();
     header();
+    while (bussesPtr[count] != nullptr)
+    {
+        cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
+        count ++;
+    }
     string userIn; //variable for user input
     
     string searchID;
@@ -92,12 +98,10 @@ int main()
     
    if (userIn.substr(0,1) == "C")
    {   choice = 3;
-       
        option = userIn.substr(0,1);
        searchID = userIn.substr(2,5);
        newStat = userIn.substr(7);
        cout << option << searchID << newStat << endl;
-       choice = 3;
        int intID = stoi(searchID);
        
        for (int i = 0; i < newStat.length(); i++)
@@ -107,24 +111,24 @@ int main()
    }
 else if (userIn.substr(0,1) == "L")
 {
-    
     choice = 2;
-       
        option = userIn.substr(0,1);
        searchID = userIn.substr(2,5);
-       newStat = userIn.substr(7);
-       cout << option << searchID << newStat << endl;
-       choice = 3;
        int intID = stoi(searchID);
-       
-     
 }
-   
-    while (bussesPtr[count] != nullptr)
-    {
-        cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
-        count ++;
-    }
+else if (userIn.substr(0,1) == "D")
+{
+    choice = 1;
+      
+       int intID = stoi(searchID);
+}
+else if (userIn.substr(0,1) == "X")
+{
+    choice = 4;
+       
+       int intID = stoi(searchID);
+}
+    
 
     switch (choice)
     {
