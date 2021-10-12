@@ -56,6 +56,24 @@ char Bus::getStatus() const
     
     return status;
 }
+int Bus::search(int seId, Bus * bts)const
+{
+    
+    int i = 0;
+    while (bts[i]->getbusID() != nullptr)
+            {
+                
+                if (seId == bts[i].getbusID())
+                {
+
+                    return  i;
+                }
+
+            }
+            return -1;
+    
+  
+}
 Bus::~Bus()
 {
     

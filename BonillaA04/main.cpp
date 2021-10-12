@@ -73,7 +73,7 @@ int main()
        
     }
    
-    
+    busRecs.close();
     
     int count = 0;//iterates through ptr array
     
@@ -97,10 +97,10 @@ int main()
             <#statements#>
             break;
         case 2:
-            <#statements#>
+            statements
             break;
         case 3:
-            statements
+            setStatus(/*some variable*/);
         case 4:
             cout << "Thanks you, have a nice banana!" << endl;
             break;

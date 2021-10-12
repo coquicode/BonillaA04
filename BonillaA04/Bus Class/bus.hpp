@@ -39,7 +39,7 @@ public:
     int getCapacity() const;
     int getMileage() const;
     char getStatus() const;
-    
+    int search(int, Bus*) const;
 };
     
 #endif /* bus_hpp */
