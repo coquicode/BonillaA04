@@ -86,7 +86,9 @@ int main()
         cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
         count ++;
     }
-    string userIn; //variable for user input
+    
+    {
+        string userIn; //variable for user input
     
     string searchID;
     string newStat;
@@ -96,7 +98,7 @@ int main()
     char stats[2];
     getline(cin,userIn);//stores user input
     
-   if (userIn.substr(0,1) == "C")
+   if (userIn.compare(0,1, "C"))
    {   choice = 3;
        option = userIn.substr(0,1);
        searchID = userIn.substr(2,5);
@@ -109,20 +111,20 @@ int main()
                stats[i] = userIn.c_str()[i];
            }
    }
-else if (userIn.substr(0,1) == "L")
+else if (userIn.compare(0,1, "L"))
 {
     choice = 2;
        option = userIn.substr(0,1);
        searchID = userIn.substr(2,5);
        int intID = stoi(searchID);
 }
-else if (userIn.substr(0,1) == "D")
+else if (userIn.compare(0,1, "D"))
 {
     choice = 1;
       
-       int intID = stoi(searchID);
+     
 }
-else if (userIn.substr(0,1) == "X")
+else if (userIn.compare(0,1,"X"))
 {
     choice = 4;
        
@@ -148,6 +150,6 @@ else if (userIn.substr(0,1) == "X")
         default:
             break;
     }
-    
+    }
     return 0;
 }

@@ -108,6 +108,40 @@
 			<key>uniqueIdentifier</key>
 			<string>2ECD2DDA-B7D6-4DE7-B4E8-A0CFCBB208D0</string>
 		</dict>
+		<key>5436049E-41D9-47A7-A9FF-B40B2CF27AEE</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>5436049E-41D9-47A7-A9FF-B40B2CF27AEE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713788.19106495</real>
+			<key>timeStoppedRecording</key>
+			<real>655713909.33209002</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>5436049E-41D9-47A7-A9FF-B40B2CF27AEE</string>
+		</dict>
 		<key>63B0515D-A2AF-4092-B59A-35A011A7D6E8</key>
 		<dict>
 			<key>className</key>
@@ -141,6 +175,108 @@
 			<string>Run BonillaA04</string>
 			<key>uniqueIdentifier</key>
 			<string>63B0515D-A2AF-4092-B59A-35A011A7D6E8</string>
+		</dict>
+		<key>84717CA0-EA67-491E-8A8D-1179AB618B71</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>84717CA0-EA67-491E-8A8D-1179AB618B71.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713573.87615097</real>
+			<key>timeStoppedRecording</key>
+			<real>655713690.693555</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>84717CA0-EA67-491E-8A8D-1179AB618B71</string>
+		</dict>
+		<key>99115BDC-C473-462E-95DC-4A39AA12F76A</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>99115BDC-C473-462E-95DC-4A39AA12F76A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713497.99969602</real>
+			<key>timeStoppedRecording</key>
+			<real>655713513.74643195</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>99115BDC-C473-462E-95DC-4A39AA12F76A</string>
+		</dict>
+		<key>9F025CA0-D157-4F0C-80C8-6B5CBEBD98E0</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9F025CA0-D157-4F0C-80C8-6B5CBEBD98E0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713691.33071601</real>
+			<key>timeStoppedRecording</key>
+			<real>655713704.87763906</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>9F025CA0-D157-4F0C-80C8-6B5CBEBD98E0</string>
 		</dict>
 		<key>A14416DE-AA58-451A-979D-A632EA82AC22</key>
 		<dict>
@@ -210,6 +346,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B80F0C27-D973-440C-A098-C9E0DE1AF1BA</string>
 		</dict>
+		<key>C399FA40-AE32-4893-80DF-3D562DA8D35D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>C399FA40-AE32-4893-80DF-3D562DA8D35D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713134.87633097</real>
+			<key>timeStoppedRecording</key>
+			<real>655713498.18008399</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>C399FA40-AE32-4893-80DF-3D562DA8D35D</string>
+		</dict>
 		<key>D1FF9DB0-8EA9-4A30-A981-7A22A8F93C8C</key>
 		<dict>
 			<key>className</key>
@@ -243,6 +413,74 @@
 			<string>Run BonillaA04</string>
 			<key>uniqueIdentifier</key>
 			<string>D1FF9DB0-8EA9-4A30-A981-7A22A8F93C8C</string>
+		</dict>
+		<key>F12BDDA3-1E1A-4B00-800C-E1133FA6C2F6</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>F12BDDA3-1E1A-4B00-800C-E1133FA6C2F6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655713742.53072798</real>
+			<key>timeStoppedRecording</key>
+			<real>655713766.602705</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>F12BDDA3-1E1A-4B00-800C-E1133FA6C2F6</string>
+		</dict>
+		<key>FC00F999-FA3B-48D1-AA2F-5C6DCFF4E271</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>FC00F999-FA3B-48D1-AA2F-5C6DCFF4E271.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BonillaA04 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BonillaA04</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run BonillaA04</string>
+			<key>timeStartedRecording</key>
+			<real>655712602.56059301</real>
+			<key>timeStoppedRecording</key>
+			<real>655712719.71405005</real>
+			<key>title</key>
+			<string>Run BonillaA04</string>
+			<key>uniqueIdentifier</key>
+			<string>FC00F999-FA3B-48D1-AA2F-5C6DCFF4E271</string>
 		</dict>
 	</dict>
 </dict>
