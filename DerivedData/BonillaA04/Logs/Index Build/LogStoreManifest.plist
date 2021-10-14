@@ -1468,6 +1468,40 @@
 			<key>uniqueIdentifier</key>
 			<string>440BD6AA-A262-4C91-8962-0D946D460623</string>
 		</dict>
+		<key>45C3D931-2950-49CF-A0F7-EFC83AE00A66</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>45C3D931-2950-49CF-A0F7-EFC83AE00A66.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>655892787.01899099</real>
+			<key>timeStoppedRecording</key>
+			<real>655892787.06994498</real>
+			<key>title</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>45C3D931-2950-49CF-A0F7-EFC83AE00A66</string>
+		</dict>
 		<key>47CE8238-C5EC-4E85-8E3C-F1AECF2EC337</key>
 		<dict>
 			<key>className</key>
@@ -4052,6 +4086,40 @@
 			<key>uniqueIdentifier</key>
 			<string>9D74E6F8-08AE-43B6-9885-D636A16B6354</string>
 		</dict>
+		<key>9D8170D7-209C-442A-9EB8-BE0DF40A35A2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>9D8170D7-209C-442A-9EB8-BE0DF40A35A2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>655892863.70660496</real>
+			<key>timeStoppedRecording</key>
+			<real>655892863.93418896</real>
+			<key>title</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>9D8170D7-209C-442A-9EB8-BE0DF40A35A2</string>
+		</dict>
 		<key>9F0CD138-9DD7-47AC-9DEA-3C0B85776755</key>
 		<dict>
 			<key>className</key>
@@ -4527,6 +4595,40 @@
 			<string>BonillaA04 Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>A9BD774D-A321-4D1A-BD8D-50EBFBCF9E4E</string>
+		</dict>
+		<key>AA081882-91C7-4FF3-A19A-6D1A49565CDA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>AA081882-91C7-4FF3-A19A-6D1A49565CDA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>655892750.36108601</real>
+			<key>timeStoppedRecording</key>
+			<real>655892750.47943902</real>
+			<key>title</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>AA081882-91C7-4FF3-A19A-6D1A49565CDA</string>
 		</dict>
 		<key>AA861A7A-9600-430E-97DA-D3435FB4E855</key>
 		<dict>
@@ -5241,6 +5343,40 @@
 			<string>BonillaA04 Build Preparation</string>
 			<key>uniqueIdentifier</key>
 			<string>C4149095-CFF9-4304-8D3F-3255DF2177A7</string>
+		</dict>
+		<key>C486D34C-2119-41B9-93B2-DD852AED9BF0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.IndexBuildLog</string>
+			<key>fileName</key>
+			<string>C486D34C-2119-41B9-93B2-DD852AED9BF0.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Index Build</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>timeStartedRecording</key>
+			<real>655892840.74598002</real>
+			<key>timeStoppedRecording</key>
+			<real>655892840.79763699</real>
+			<key>title</key>
+			<string>BonillaA04 Build Preparation</string>
+			<key>uniqueIdentifier</key>
+			<string>C486D34C-2119-41B9-93B2-DD852AED9BF0</string>
 		</dict>
 		<key>C68FE31F-0C1B-4865-A6F8-36A2DFAE2AAE</key>
 		<dict>

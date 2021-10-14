@@ -4,7 +4,6 @@
 //
 //  Created by Roem Bonilla on 10/10/21.
 //
-#include "functions.hpp"
 #include "bus.hpp"
 #include <iostream>
 #include <cstdlib>
@@ -57,7 +56,7 @@ char Bus::getStatus() const
     
     return status;
 }
-string Bus::search(int seId, char stat[], Bus * bts[])const
+void Bus::search(int seId, char stat[], Bus * bts[])const
 {
     
     int i = 0;
@@ -66,37 +65,46 @@ string Bus::search(int seId, char stat[], Bus * bts[])const
                 if (seId == bts[i]->getbusID())
                 {
                     bts[i]->setStatus(stat[0]);
-                    return  "Succes";
+                    cout <<  "Succes";
                 }
             }
-            return "Bus ID not found";
+            cout << "Bus ID not found";
 }
-string Bus::displayBus(int id, Bus *bts[])
+int Bus::displayBus(int id, Bus *bts[])
 {
     int i = 0;
     while (bts[i] != nullptr)
             {
-                if (id == bts[i]->getbusID())
+                if (id == bts[i]->getbusID() && bts[i] != nullptr)
                 {
-                    displayMenu();
-                    header();
-                    cout << bts[i]->getbusID();cout << setw(15); cout << bts[i]->getType(); cout << setw(15); cout << bts[i]->getCapacity(); cout << setw(15); cout << bts[i]->getMileage();cout << setw(15); cout << bts[i]->getStatus() << endl;
+//                    cout << "\nEnter transaction code (D = Display, L = List a Bus, C = Change, X = Exit" << endl;
+//                    cout << "======================================================================" << endl;
+//
+//                       cout << "Bus ID"; cout << setw(17);cout << "Bus Type"; cout << setw(17); cout << "Bus Capacity"; cout << setw(13); cout << "Mileage"; cout << setw(15); cout << "Status" << endl;
+//
+//                       cout << "======================================================================" << endl;
+//
+//                    cout << bts[i]->getbusID();cout << setw(15); cout << bts[i]->getType(); cout << setw(15); cout << bts[i]->getCapacity(); cout << setw(15); cout << bts[i]->getMileage();cout << setw(15); cout << bts[i]->getStatus() << endl;
+                    (bts[i+1]) = nullptr;
+                    return i;
                 }
                 i++;
-            }
-            return "Bus not found";
-}
 
-int Bus::disOne(Bus *poaat[])
-{   string waiting = "";
+
+            }
+            
+ return -1;}
+
+void Bus::disOne(Bus *poaat[])
+{
     int i =0;
     while (poaat[i] != nullptr)
     {
         cout << poaat[i]->getbusID();cout << setw(15); cout << poaat[i]->getType(); cout << setw(15); cout << poaat[i]->getCapacity(); cout << setw(15); cout << poaat[i]->getMileage();cout << setw(15); cout << poaat[i]->getStatus() << endl;
         i ++;
-        cin >> waiting;
+        cin.ignore();
     }
-    return -1;
+
 }
 Bus::~Bus()
 {

@@ -19,8 +19,9 @@ void header()
 {
     cout << "======================================================================" << endl;
     
-    cout << "Bus ID"; cout << setw(15);cout << "Bus Type"; cout << setw(15); cout << "Bus Capacity"; cout << setw(15); cout << "Mileage"; cout << setw(15); cout << "Status" << endl;
+    cout << "Bus ID"; cout << setw(17);cout << "Bus Type"; cout << setw(17); cout << "Bus Capacity"; cout << setw(13); cout << "Mileage"; cout << setw(15); cout << "Status" << endl;
     
     cout << "======================================================================" << endl;
 }
 //Searches for a bus
+

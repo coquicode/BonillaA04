@@ -83,73 +83,103 @@ int main()
     header();
     while (bussesPtr[count] != nullptr)
     {
-        cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(15); cout << bussesPtr[count]->getMileage();cout << setw(15); cout << bussesPtr[count]->getStatus() << endl;
+        cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(18); cout << bussesPtr[count]->getMileage();cout << setw(12); cout << bussesPtr[count]->getStatus() << endl;
         count ++;
     }
     
-    {
+    cout << endl;
         string userIn; //variable for user input
     
     string searchID;
     string newStat;
     string option;
+    int find = 0;
     int choice;
-    int intID;
+    int intID =0;;
     char stats[2];
-    getline(cin,userIn);//stores user input
     
-   if (userIn.compare(0,1, "C"))
-   {   choice = 3;
+    getline(cin,userIn);//stores user input
+   while (choice != 4)
+       {
+   if (userIn.compare(0,1, "C") == 0)
+   {
+       choice = 3;
        option = userIn.substr(0,1);
-       searchID = userIn.substr(2,5);
+       searchID = userIn.substr(1,5);
        newStat = userIn.substr(7);
        cout << option << searchID << newStat << endl;
-       int intID = stoi(searchID);
+       intID = stoi(searchID);
        
        for (int i = 0; i < newStat.length(); i++)
            {
                stats[i] = userIn.c_str()[i];
            }
    }
-else if (userIn.compare(0,1, "L"))
+else if (userIn.compare(0,1, "L") == 0)
 {
     choice = 2;
        option = userIn.substr(0,1);
        searchID = userIn.substr(2,5);
-       int intID = stoi(searchID);
+       intID = stoi(searchID);
 }
-else if (userIn.compare(0,1, "D"))
+else if (userIn.compare(0,1, "D") == 0)
 {
     choice = 1;
-      
-     
+    
 }
-else if (userIn.compare(0,1,"X"))
+else if (userIn.compare(0,1,"X")== 0)
 {
     choice = 4;
        
        int intID = stoi(searchID);
 }
     
-
+        Bus tempo;
     switch (choice)
     {
         case 1:
             cout << "Press enter to see the next bus on the list. " << endl;
-            bussesPtr[0]->disOne(bussesPtr);
+            displayMenu();
+            header();
+            tempo.disOne(bussesPtr);
             break;
         case 2:
-           bussesPtr[0]->displayBus(intID, bussesPtr);
+           find = tempo.displayBus(intID, bussesPtr);
+            
+             
+            if (find == -1)
+            {
+                cout << "\n Bus was not found" << endl;
+            }
+            
+            else if (find > 0)
+            {
+                displayMenu();
+                header();
+                
+                cout << "\n Bus Found:" << endl << endl;
+                cout << bussesPtr[find]->getbusID();cout << setw(15); cout << bussesPtr[find]->getType(); cout << setw(15); cout << bussesPtr[find]->getCapacity(); cout << setw(18); cout << bussesPtr[find]->getMileage();cout << setw(12); cout << bussesPtr[find]->getStatus() << endl;
+            }
+//              else
             break;
         case 3:
-            bussesPtr[0]->search(intID, stats,  bussesPtr);
-        case 4:
-            cout << "Thanks you, have a nice banana!" << endl;
-            break;
-
+            tempo.search(intID, stats,  bussesPtr);
         default:
             break;
+            
     }
+           displayMenu();
+           header();
+           count = 0;
+           while (bussesPtr[count] != nullptr)
+              {
+                  cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(18); cout << bussesPtr[count]->getMileage();cout << setw(12); cout << bussesPtr[count]->getStatus() << endl;
+                  count ++;
+              }
+           cout  << endl;
+           cin.ignore();
+                      getline(cin,userIn);//stores user input
     }
+    cout << "Thanks you, have a nice banana!" << endl;
     return 0;
 }
