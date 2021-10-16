@@ -39,8 +39,8 @@ public:
     int getCapacity() const;
     int getMileage() const;
     char getStatus() const;
-    void search(int,char [], Bus *[]) const;
-    int displayBus(int, Bus *[]);
+    int search(int,char [], Bus *[]) const;
+    int displayBus(int, Bus * []);
     void disOne(Bus *[]);
 };
     

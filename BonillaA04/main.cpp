@@ -99,15 +99,15 @@ int main()
     char stats[2];
     
     getline(cin,userIn);//stores user input
+    
    while (choice != 4)
        {
    if (userIn.compare(0,1, "C") == 0)
    {
        choice = 3;
        option = userIn.substr(0,1);
-       searchID = userIn.substr(1,5);
+       searchID = userIn.substr(2,5);
        newStat = userIn.substr(7);
-       cout << option << searchID << newStat << endl;
        intID = stoi(searchID);
        
        for (int i = 0; i < newStat.length(); i++)
@@ -137,12 +137,15 @@ else if (userIn.compare(0,1,"X")== 0)
         Bus tempo;
     switch (choice)
     {
+            //Displays one bus a time
         case 1:
             cout << "Press enter to see the next bus on the list. " << endl;
             displayMenu();
             header();
             tempo.disOne(bussesPtr);
+            cout << "----End of list----" << endl;
             break;
+            //Displays a single bus
         case 2:
            find = tempo.displayBus(intID, bussesPtr);
             
@@ -152,7 +155,7 @@ else if (userIn.compare(0,1,"X")== 0)
                 cout << "\n Bus was not found" << endl;
             }
             
-            else if (find > 0)
+            else if (find > -1)
             {
                 displayMenu();
                 header();
@@ -160,26 +163,35 @@ else if (userIn.compare(0,1,"X")== 0)
                 cout << "\n Bus Found:" << endl << endl;
                 cout << bussesPtr[find]->getbusID();cout << setw(15); cout << bussesPtr[find]->getType(); cout << setw(15); cout << bussesPtr[find]->getCapacity(); cout << setw(18); cout << bussesPtr[find]->getMileage();cout << setw(12); cout << bussesPtr[find]->getStatus() << endl;
             }
-//              else
-            break;
-        case 3:
-            tempo.search(intID, stats,  bussesPtr);
-        default:
+            cout << "----End of list----" << endl;
             break;
             
-    }
+         //Changes bus status
+        case 3:
+            int found = 0;
+           found = tempo.search(intID, stats,  bussesPtr);
+            if (found == 1)
+                cout << "Success. Status updated." << endl;
+            else
+            {
+                cout << "Bus could not be found." << endl;
+            }
+            break;
+       
+        }
            displayMenu();
            header();
            count = 0;
            while (bussesPtr[count] != nullptr)
               {
                   cout << bussesPtr[count]->getbusID();cout << setw(15); cout << bussesPtr[count]->getType(); cout << setw(15); cout << bussesPtr[count]->getCapacity(); cout << setw(18); cout << bussesPtr[count]->getMileage();cout << setw(12); cout << bussesPtr[count]->getStatus() << endl;
+                 
                   count ++;
               }
-           cout  << endl;
-           cin.ignore();
+          cout << "----End of list----" << endl;
+ //          cin.ignore();
                       getline(cin,userIn);//stores user input
-    }
+       }
     cout << "Thanks you, have a nice banana!" << endl;
     return 0;
 }

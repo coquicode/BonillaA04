@@ -56,7 +56,7 @@ char Bus::getStatus() const
     
     return status;
 }
-void Bus::search(int seId, char stat[], Bus * bts[])const
+int Bus::search(int seId, char stat[], Bus * bts[])const
 {
     
     int i = 0;
@@ -65,36 +65,29 @@ void Bus::search(int seId, char stat[], Bus * bts[])const
                 if (seId == bts[i]->getbusID())
                 {
                     bts[i]->setStatus(stat[0]);
-                    cout <<  "Succes";
+                    return 1;
                 }
             }
-            cout << "Bus ID not found";
-}
-int Bus::displayBus(int id, Bus *bts[])
+            
+return -1;}
+//Displays a single bus
+int Bus::displayBus(int id, Bus * bts[])
 {
     int i = 0;
+    
     while (bts[i] != nullptr)
             {
                 if (id == bts[i]->getbusID() && bts[i] != nullptr)
                 {
-//                    cout << "\nEnter transaction code (D = Display, L = List a Bus, C = Change, X = Exit" << endl;
-//                    cout << "======================================================================" << endl;
-//
-//                       cout << "Bus ID"; cout << setw(17);cout << "Bus Type"; cout << setw(17); cout << "Bus Capacity"; cout << setw(13); cout << "Mileage"; cout << setw(15); cout << "Status" << endl;
-//
-//                       cout << "======================================================================" << endl;
-//
-//                    cout << bts[i]->getbusID();cout << setw(15); cout << bts[i]->getType(); cout << setw(15); cout << bts[i]->getCapacity(); cout << setw(15); cout << bts[i]->getMileage();cout << setw(15); cout << bts[i]->getStatus() << endl;
-                    (bts[i+1]) = nullptr;
+
                     return i;
                 }
                 i++;
-
-
             }
             
  return -1;}
 
+//Dispplays busses one at a time
 void Bus::disOne(Bus *poaat[])
 {
     int i =0;
